@@ -9,6 +9,7 @@ import * as S from './style.css'
 const GachaImgs = [<Gacha1 />, <Gacha2 />, <Gacha3 />, <Gacha4 />, <Gacha5 />, <Gacha6 />, <Gacha7 />]
 
 export default function Gacha() {
+  const gachaTicket = localStorage.getItem('gachaTicket')
   const [gachaIndex, setGachaIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -19,8 +20,7 @@ export default function Gacha() {
     setIsAnimating(true);
     let current = 1;
 
-    const ticket = localStorage.getItem('gachaTicket');
-    localStorage.setItem('gachaTicket', (Number(ticket) - 1).toString());
+    localStorage.setItem('gachaTicket', (Number(gachaTicket) - 1).toString());
   
     timerRef.current = setInterval(() => {
       if (current < GachaImgs.length) {
@@ -61,12 +61,12 @@ export default function Gacha() {
           <TicketSvg />
           <div className={S.ticketTextLayout}>
             <p className={S.ticketRemainText}>남은 뽑기권</p>
-            <p className={S.ticketRemainValue}>3개</p>
+            <p className={S.ticketRemainValue}>{gachaTicket}개</p>
           </div>
         </div>
 
         <div className={S.gachaPresentLayout}>
-          <Button onClick={onExcuseGacha} disabled={isAnimating}>
+          <Button onClick={onExcuseGacha} disabled={isAnimating || gachaTicket == '0'}>
             {isAnimating ? '뽑는 중...' : '선물 뽑기'}
           </Button>
           <Button kind='light'>공유하고 기회 더 얻기</Button>
