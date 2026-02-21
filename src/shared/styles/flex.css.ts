@@ -72,4 +72,4 @@ export const flex = {
     justifyContent: 'flex-end',
     alignItems: 'center',
   }),
-};
+} as const;
