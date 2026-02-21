@@ -193,6 +193,100 @@ export const GuideOverlay = style({
   ...flex.COLUMN_END,
 })
 
+export const FailOverlay = style({
+  position: 'fixed',
+  inset: 0,
+  backgroundColor: 'rgba(0, 0, 0, 0.35)',
+  zIndex: 12,
+  display: 'grid',
+  placeItems: 'center',
+  padding: '0 24px',
+})
+
+export const FailCard = style({
+  position: 'relative',
+  width: '100%',
+  maxWidth: '340px',
+  borderRadius: '24px',
+  backgroundColor: theme.white,
+  padding: '28px 20px 20px',
+  boxShadow: '0 18px 40px rgba(0, 0, 0, 0.15)',
+  ...flex.COLUMN_CENTER,
+  gap: '16px',
+})
+
+export const FailCloseButton = style({
+  position: 'absolute',
+  top: '14px',
+  right: '14px',
+  width: '32px',
+  height: '32px',
+  borderRadius: '12px',
+  backgroundColor: theme.grey50,
+  ...flex.CENTER,
+})
+
+export const FailCloseIcon = style({
+  position: 'relative',
+  width: '16px',
+  height: '16px',
+  selectors: {
+    '&::before, &::after': {
+      content: '""',
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      width: '16px',
+      height: '2px',
+      backgroundColor: theme.grey700,
+      borderRadius: '999px',
+      transformOrigin: 'center',
+    },
+    '&::before': {
+      transform: 'translate(-50%, -50%) rotate(45deg)',
+    },
+    '&::after': {
+      transform: 'translate(-50%, -50%) rotate(-45deg)',
+    },
+  },
+})
+
+export const FailTitle = style({
+  fontSize: '20px',
+  fontWeight: '700',
+  color: theme.grey700,
+  letterSpacing: '-0.3px',
+})
+
+export const FailImage = style({
+  width: '150px',
+  height: '150px',
+  objectFit: 'contain',
+})
+
+export const FailTicketRow = style({
+  ...flex.CENTER,
+  gap: '6px',
+})
+
+export const FailTicketText = style({
+  color: theme.grey600,
+  fontSize: '14px',
+  fontWeight: '500',
+})
+
+export const FailTicketValue = style({
+  color: theme.purpleNormal,
+  fontSize: '14px',
+  fontWeight: '700',
+})
+
+export const FailActionGroup = style({
+  display: 'grid',
+  gap: '10px',
+  width: '100%',
+})
+
 export const GuideSheet = style({
   width: '100%',
   maxWidth: '520px',

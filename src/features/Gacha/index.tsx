@@ -43,25 +43,34 @@ const GiftImgs = [PeperoImg, ChickenImg, IceCreamImg, undefined, AirpodImg]
 const GachaHistory = [
   { id: 1, name: '빼빼로', brand: '이마트24', image: Gift1 },
   { id: 2, name: '치킨', brand: 'BHC', image: Gift2 },
-  { id: 3, name: '파인트 아이스크림', brand: '배스킨라빈스', image: Gift3 },
-  { id: 4, name: '꽝', brand: '꽝', image: Gift4 },
+  { id: 3, name: '꽝', brand: '꽝', image: Gift4 },
+  { id: 4, name: '파인트 아이스크림', brand: '배스킨라빈스', image: Gift3 },
   { id: 5, name: '에어팟', brand: 'apple', image: Gift5 },
 ]
 
 export default function Gacha() {
-  const gachaTicket = localStorage.getItem('gachaTicket')
+  const [ticketCount, setTicketCount] = useState<number>(() => {
+    return Number(localStorage.getItem('gachaTicket') ?? 0);
+  });
   const [gachaIndex, setGachaIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isGuideOpen, setIsGuideOpen] = useState(false);
   const [isHistoryOpen, setIsHistoryOpen] = useState(false);
   const [remainingDays, setRemainingDays] = useState<number | null>(null);
   const [showGift, setShowGift] = useState(false);
+  const [isFailOpen, setIsFailOpen] = useState(false);
   const [gift, setGift] = useState({
     id: '',
     brand: '',
     name: '',
   });
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const hasTicket = ticketCount > 0;
+  const handleRetry = () => {
+    if (!hasTicket) return;
+    setIsFailOpen(false);
+    onExcuseGacha();
+  };
   const fireConfetti = () => {
     const duration = 0.5 * 1000;
     const end = Date.now() + duration;
@@ -137,7 +146,9 @@ export default function Gacha() {
     setIsAnimating(true);
     let current = 1;
 
-    localStorage.setItem('gachaTicket', (Number(gachaTicket) - 1).toString());
+    const nextTicketCount = Math.max(0, ticketCount - 1);
+    localStorage.setItem('gachaTicket', String(nextTicketCount));
+    setTicketCount(nextTicketCount);
   
     const fetchGiftData = async () => {
       try {
@@ -170,6 +181,7 @@ export default function Gacha() {
           setShowGift(true);
         } else {
           setGachaIndex(0);
+          setIsFailOpen(true);
         }
         setIsAnimating(false);
       }
@@ -233,12 +245,12 @@ export default function Gacha() {
           <TicketSvg />
           <div className={S.ticketTextLayout}>
             <p className={S.ticketRemainText}>남은 뽑기권</p>
-            <p className={S.ticketRemainValue}>{gachaTicket}개</p>
+            <p className={S.ticketRemainValue}>{ticketCount}개</p>
           </div>
         </div>
 
         <div className={S.gachaPresentLayout}>
-          <Button onClick={onExcuseGacha} disabled={isAnimating || gachaTicket === '0'}>
+          <Button onClick={onExcuseGacha} disabled={isAnimating || !hasTicket}>
             {isAnimating ? '뽑는 중...' : '선물 뽑기'}
           </Button>
           <Button 
@@ -249,6 +261,34 @@ export default function Gacha() {
           </Button>
         </div>
       </footer>
+
+      {isFailOpen && (
+        <div className={S.FailOverlay} onClick={() => setIsFailOpen(false)}>
+          <div className={S.FailCard} onClick={(event) => event.stopPropagation()}>
+            <button className={S.FailCloseButton} onClick={() => setIsFailOpen(false)}>
+              <span className={S.FailCloseIcon} />
+            </button>
+            <p className={S.FailTitle}>아쉽지만 다음기회에...</p>
+            <img className={S.FailImage} src={Gift4} alt="꽝" />
+            <div className={S.FailTicketRow}>
+              <TicketSvg />
+              <p className={S.FailTicketText}>남은 뽑기권</p>
+              <p className={S.FailTicketValue}>{ticketCount}개</p>
+            </div>
+            <div className={S.FailActionGroup}>
+              <Button onClick={handleRetry} disabled={!hasTicket}>
+                선물 뽑기
+              </Button>
+              <Button
+                kind="light"
+                onClick={() => window.webkit?.messageHandlers?.kakaoShare?.postMessage({})}
+              >
+                공유하고 기회 더 얻기
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {isGuideOpen && (
         <div className={S.GuideOverlay} onClick={() => setIsGuideOpen(false)}>
