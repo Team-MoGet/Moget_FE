@@ -29,16 +29,19 @@ import Gift from '@/assets/gift'
 import { useNavigate } from 'react-router-dom'
 
 declare global {
-  interface Window {
-    webkit?: {
-      messageHandlers?: {
-        kakaoShare?: {
-          postMessage: (data: unknown) => void
+    interface Window {
+      webkit?: {
+        messageHandlers?: {
+          kakaoShare?: {
+            postMessage: (data: unknown) => void
+          }
+          showVideo?: {
+            postMessage: (data: unknown) => void
+          }
         }
       }
     }
   }
-}
 
 const GachaImgs = [<Gacha1 />, <Gacha2 />, <Gacha3 />, <Gacha4 />, <Gacha5 />, <Gacha6 />, <Gacha7 />]
 const GiftImgs = [PeperoImg, ChickenImg, IceCreamImg, Gift4, AirpodImg]
@@ -248,6 +251,7 @@ export default function Gacha() {
       ) : (
         <div className={S.GachaImgLayout} >
           <img
+            onClick={() => window.webkit?.messageHandlers?.showVideo?.postMessage({})}
             src={bonusImg}
             alt="보너스 기회"
             className={S.BonusFloat}
