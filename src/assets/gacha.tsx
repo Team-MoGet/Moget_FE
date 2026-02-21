@@ -29,7 +29,7 @@ export default function Gacha1() {
 </g>
 <g filter="url(#filter9_i_89_1394)">
 <path d="M120.174 330C144.334 330 147.5 357.787 147.5 372C147.5 372 146.348 372.195 120.174 372.195C94 372.195 94 372 94 372C93.9998 360.008 96.0132 330 120.174 330Z" fill="#6B3AD9"/>
-<path d="M120.174 330C144.334 330 147.5 357.787 147.5 372C147.5 372 146.348 372.195 120.174 372.195C94 372.195 94 372 94 372C93.9998 360.008 96.0132 330 120.174 330Z" fill="black" fill-opacity="0.1"/>
+<path d="M120.174 330C144.334 330 147.5 357.787 147.5 372C147.5 372 146.348 372.195 120.174 372.195C94 372.195 94 372 94 372C93.9998 360.008 96.0132 330 120.174 330Z" fill="black" fillOpacity="0.1"/>
 </g>
 </g>
 <ellipse cx="120.5" cy="138.032" rx="120.5" ry="112.386" fill="url(#paint0_radial_89_1394)"/>
@@ -80,8 +80,8 @@ export default function Gacha1() {
 <circle cx="175.917" cy="116.917" r="24" transform="rotate(20.6317 175.917 116.917)" fill="url(#paint10_linear_89_1394)"/>
 </g>
 <defs>
-<filter id="filter0_i_89_1394" x="16.9336" y="211" width="207.95" height="171.195" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter0_i_89_1394" x="16.9336" y="211" width="207.95" height="171.195" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="10"/>
@@ -90,8 +90,8 @@ export default function Gacha1() {
 <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0"/>
 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_89_1394"/>
 </filter>
-<filter id="filter1_d_89_1394" x="88.0918" y="266.474" width="68.9082" height="53.9625" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter1_d_89_1394" x="88.0918" y="266.474" width="68.9082" height="53.9625" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="2" dy="2"/>
 <feComposite in2="hardAlpha" operator="out"/>
@@ -99,8 +99,8 @@ export default function Gacha1() {
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_1394"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_1394" result="shape"/>
 </filter>
-<filter id="filter2_d_89_1394" x="97.3271" y="274.88" width="48.3477" height="38.4476" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter2_d_89_1394" x="97.3271" y="274.88" width="48.3477" height="38.4476" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="-1" dy="3"/>
 <feComposite in2="hardAlpha" operator="out"/>
@@ -108,8 +108,8 @@ export default function Gacha1() {
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_1394"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_1394" result="shape"/>
 </filter>
-<filter id="filter3_i_89_1394" x="102.546" y="277.675" width="40.4502" height="29.7092" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter3_i_89_1394" x="102.546" y="277.675" width="40.4502" height="29.7092" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="2"/>
@@ -117,8 +117,8 @@ export default function Gacha1() {
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_89_1394"/>
 </filter>
-<filter id="filter4_i_89_1394" x="117.549" y="287.891" width="9.90137" height="9.90143" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter4_i_89_1394" x="117.549" y="287.891" width="9.90137" height="9.90143" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="-1" dy="2"/>
@@ -126,8 +126,8 @@ export default function Gacha1() {
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_89_1394"/>
 </filter>
-<filter id="filter5_i_89_1394" x="146.202" y="270.061" width="6.09082" height="6.09088" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter5_i_89_1394" x="146.202" y="270.061" width="6.09082" height="6.09088" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="-1" dy="1"/>
@@ -135,8 +135,8 @@ export default function Gacha1() {
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_89_1394"/>
 </filter>
-<filter id="filter6_i_89_1394" x="92.7378" y="270.061" width="6.09082" height="6.09088" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter6_i_89_1394" x="92.7378" y="270.061" width="6.09082" height="6.09088" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="-1" dy="1"/>
@@ -144,8 +144,8 @@ export default function Gacha1() {
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_89_1394"/>
 </filter>
-<filter id="filter7_i_89_1394" x="92.7378" y="304.576" width="6.09082" height="6.09088" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter7_i_89_1394" x="92.7378" y="304.576" width="6.09082" height="6.09088" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="-1" dy="1"/>
@@ -153,8 +153,8 @@ export default function Gacha1() {
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_89_1394"/>
 </filter>
-<filter id="filter8_i_89_1394" x="146.202" y="306.606" width="6.09082" height="6.09088" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter8_i_89_1394" x="146.202" y="306.606" width="6.09082" height="6.09088" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="-1" dy="1"/>
@@ -162,8 +162,8 @@ export default function Gacha1() {
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_89_1394"/>
 </filter>
-<filter id="filter9_i_89_1394" x="94" y="330" width="53.5" height="42.1953" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter9_i_89_1394" x="94" y="330" width="53.5" height="42.1953" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="4" dy="4"/>
@@ -171,8 +171,8 @@ export default function Gacha1() {
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_89_1394"/>
 </filter>
-<filter id="filter10_d_89_1394" x="64" y="8" width="114" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter10_d_89_1394" x="64" y="8" width="114" height="50" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="6"/>
 <feComposite in2="hardAlpha" operator="out"/>
@@ -180,8 +180,8 @@ export default function Gacha1() {
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_1394"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_1394" result="shape"/>
 </filter>
-<filter id="filter11_d_89_1394" x="16" y="82" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter11_d_89_1394" x="16" y="82" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="2"/>
 <feGaussianBlur stdDeviation="1"/>
@@ -190,8 +190,8 @@ export default function Gacha1() {
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_1394"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_1394" result="shape"/>
 </filter>
-<filter id="filter12_d_89_1394" x="18" y="154" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter12_d_89_1394" x="18" y="154" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="2"/>
 <feGaussianBlur stdDeviation="1"/>
@@ -200,8 +200,8 @@ export default function Gacha1() {
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_1394"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_1394" result="shape"/>
 </filter>
-<filter id="filter13_d_89_1394" x="86" y="152" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter13_d_89_1394" x="86" y="152" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="2"/>
 <feGaussianBlur stdDeviation="1"/>
@@ -210,8 +210,8 @@ export default function Gacha1() {
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_1394"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_1394" result="shape"/>
 </filter>
-<filter id="filter14_d_89_1394" x="54" y="179" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter14_d_89_1394" x="54" y="179" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="2"/>
 <feGaussianBlur stdDeviation="1"/>
@@ -220,8 +220,8 @@ export default function Gacha1() {
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_1394"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_1394" result="shape"/>
 </filter>
-<filter id="filter15_d_89_1394" x="99" y="186" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter15_d_89_1394" x="99" y="186" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="2"/>
 <feGaussianBlur stdDeviation="1"/>
@@ -230,8 +230,8 @@ export default function Gacha1() {
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_1394"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_1394" result="shape"/>
 </filter>
-<filter id="filter16_d_89_1394" x="142" y="170" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter16_d_89_1394" x="142" y="170" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="2"/>
 <feGaussianBlur stdDeviation="1"/>
@@ -240,8 +240,8 @@ export default function Gacha1() {
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_1394"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_1394" result="shape"/>
 </filter>
-<filter id="filter17_d_89_1394" x="51" y="136" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter17_d_89_1394" x="51" y="136" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="2"/>
 <feGaussianBlur stdDeviation="1"/>
@@ -250,8 +250,8 @@ export default function Gacha1() {
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_1394"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_1394" result="shape"/>
 </filter>
-<filter id="filter18_d_89_1394" x="126" y="148" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter18_d_89_1394" x="126" y="148" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="2"/>
 <feGaussianBlur stdDeviation="1"/>
@@ -260,8 +260,8 @@ export default function Gacha1() {
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_1394"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_1394" result="shape"/>
 </filter>
-<filter id="filter19_d_89_1394" x="171" y="138" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter19_d_89_1394" x="171" y="138" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="2"/>
 <feGaussianBlur stdDeviation="1"/>
@@ -270,8 +270,8 @@ export default function Gacha1() {
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_1394"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_1394" result="shape"/>
 </filter>
-<filter id="filter20_d_89_1394" x="143" y="86" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter20_d_89_1394" x="143" y="86" width="65.8345" height="65.8348" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="2"/>
 <feGaussianBlur stdDeviation="1"/>
@@ -281,48 +281,48 @@ export default function Gacha1() {
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_1394" result="shape"/>
 </filter>
 <radialGradient id="paint0_radial_89_1394" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(120.5 138.032) rotate(89.6833) scale(90.4694 97.0015)">
-<stop stop-color="white" stop-opacity="0"/>
-<stop offset="1" stop-color="white" stop-opacity="0.9"/>
+<stop stopColor="white" stopOpacity="0"/>
+<stop offset="1" stopColor="white" stopOpacity="0.9"/>
 </radialGradient>
 <linearGradient id="paint1_linear_89_1394" x1="27.9172" y1="90.7174" x2="72.9172" y2="136.917" gradientUnits="userSpaceOnUse">
-<stop stop-color="white" stop-opacity="0.9"/>
-<stop offset="0.7" stop-color="white" stop-opacity="0"/>
+<stop stopColor="white" stopOpacity="0.9"/>
+<stop offset="0.7" stopColor="white" stopOpacity="0"/>
 </linearGradient>
 <linearGradient id="paint2_linear_89_1394" x1="29.9172" y1="162.717" x2="74.9172" y2="208.917" gradientUnits="userSpaceOnUse">
-<stop stop-color="white" stop-opacity="0.9"/>
-<stop offset="0.7" stop-color="white" stop-opacity="0"/>
+<stop stopColor="white" stopOpacity="0.9"/>
+<stop offset="0.7" stopColor="white" stopOpacity="0"/>
 </linearGradient>
 <linearGradient id="paint3_linear_89_1394" x1="97.9172" y1="160.717" x2="142.917" y2="206.917" gradientUnits="userSpaceOnUse">
-<stop stop-color="white" stop-opacity="0.9"/>
-<stop offset="0.7" stop-color="white" stop-opacity="0"/>
+<stop stopColor="white" stopOpacity="0.9"/>
+<stop offset="0.7" stopColor="white" stopOpacity="0"/>
 </linearGradient>
 <linearGradient id="paint4_linear_89_1394" x1="65.9172" y1="187.717" x2="110.917" y2="233.917" gradientUnits="userSpaceOnUse">
-<stop stop-color="white" stop-opacity="0.9"/>
-<stop offset="0.7" stop-color="white" stop-opacity="0"/>
+<stop stopColor="white" stopOpacity="0.9"/>
+<stop offset="0.7" stopColor="white" stopOpacity="0"/>
 </linearGradient>
 <linearGradient id="paint5_linear_89_1394" x1="110.917" y1="194.717" x2="155.917" y2="240.917" gradientUnits="userSpaceOnUse">
-<stop stop-color="white" stop-opacity="0.9"/>
-<stop offset="0.7" stop-color="white" stop-opacity="0"/>
+<stop stopColor="white" stopOpacity="0.9"/>
+<stop offset="0.7" stopColor="white" stopOpacity="0"/>
 </linearGradient>
 <linearGradient id="paint6_linear_89_1394" x1="153.917" y1="178.717" x2="198.917" y2="224.917" gradientUnits="userSpaceOnUse">
-<stop stop-color="white" stop-opacity="0.9"/>
-<stop offset="0.7" stop-color="white" stop-opacity="0"/>
+<stop stopColor="white" stopOpacity="0.9"/>
+<stop offset="0.7" stopColor="white" stopOpacity="0"/>
 </linearGradient>
 <linearGradient id="paint7_linear_89_1394" x1="62.9172" y1="144.717" x2="107.917" y2="190.917" gradientUnits="userSpaceOnUse">
-<stop stop-color="white" stop-opacity="0.9"/>
-<stop offset="0.7" stop-color="white" stop-opacity="0"/>
+<stop stopColor="white" stopOpacity="0.9"/>
+<stop offset="0.7" stopColor="white" stopOpacity="0"/>
 </linearGradient>
 <linearGradient id="paint8_linear_89_1394" x1="137.917" y1="156.717" x2="182.917" y2="202.917" gradientUnits="userSpaceOnUse">
-<stop stop-color="white" stop-opacity="0.9"/>
-<stop offset="0.7" stop-color="white" stop-opacity="0"/>
+<stop stopColor="white" stopOpacity="0.9"/>
+<stop offset="0.7" stopColor="white" stopOpacity="0"/>
 </linearGradient>
 <linearGradient id="paint9_linear_89_1394" x1="182.917" y1="146.717" x2="227.917" y2="192.917" gradientUnits="userSpaceOnUse">
-<stop stop-color="white" stop-opacity="0.9"/>
-<stop offset="0.7" stop-color="white" stop-opacity="0"/>
+<stop stopColor="white" stopOpacity="0.9"/>
+<stop offset="0.7" stopColor="white" stopOpacity="0"/>
 </linearGradient>
 <linearGradient id="paint10_linear_89_1394" x1="154.917" y1="94.7174" x2="199.917" y2="140.917" gradientUnits="userSpaceOnUse">
-<stop stop-color="white" stop-opacity="0.9"/>
-<stop offset="0.7" stop-color="white" stop-opacity="0"/>
+<stop stopColor="white" stopOpacity="0.9"/>
+<stop offset="0.7" stopColor="white" stopOpacity="0"/>
 </linearGradient>
 </defs>
 </svg>

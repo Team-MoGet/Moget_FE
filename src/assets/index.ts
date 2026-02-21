@@ -8,3 +8,4 @@ export { default as Gacha7 } from "./gacha7";
 export { default as GachaShadowSvg } from "./gachaShadow";
 export { default as InfoSvg } from "./info";
 export { default as TicketSvg } from "./ticket";
+export { default as AirpodImg } from "./airpod.png";

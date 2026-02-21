@@ -56,9 +56,60 @@ export const DDayBtn = style({
   color: theme.white,
 })
 
-const floatBob = keyframes({
-  '0%, 100%': { transform: 'translateY(0)' },
-  '50%': { transform: 'translateY(-8px)' },
+export const GiftLayout = style({
+  ...flex.COLUMN_CENTER,
+  width: '100%',
+  paddingTop: '32px',
+})
+
+export const GiftBox = style({
+  ...flex.COLUMN_CENTER,
+  width: '304px',
+  padding: '24px',
+  gap: '12px',
+  borderRadius: '24px',
+  border: `1px solid ${theme.grey200}`,
+  backgroundColor: theme.white
+})
+
+export const CurrentGift = style({
+  color: theme.grey700,
+  fontSize: '20px',
+  fontWeight: '700',
+  letterSpacing: '-0.3px'
+})
+
+export const GiftImg = style({
+  width: '140px',
+  height: '140px',
+  borderRadius: '16px',
+
+})
+
+export const GiftInfoLayout = style({
+  ...flex.COLUMN_CENTER,
+  gap: '2px',
+})
+
+export const BrandName = style({
+  color: theme.grey500,
+  fontSize: '14px',
+  fontWeight: '400',
+  letterSpacing: '-0.5',
+})
+
+export const GiftName = style({
+  color: theme.grey700,
+  fontSize: '16px',
+  fontWeight: '500',
+  letterSpacing: '-0.3px',
+})
+
+export const noticeText = style({
+  color: theme.grey400,
+  fontSize: '12px',
+  fontWeight: '400',
+  marginTop: '12px',
 })
 
 export const GachaImgLayout = style({
