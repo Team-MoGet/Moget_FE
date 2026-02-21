@@ -1,6 +1,6 @@
 import { flex } from "@/shared/styles/flex.css";
 import theme from "@/shared/styles/theme.css";
-import { style } from "@vanilla-extract/css";
+import { style, keyframes} from "@vanilla-extract/css";
 
 export const container = style({
   width: '100vw',
@@ -129,6 +129,7 @@ export const BonusFloat = style({
   width: '120px',
   height: 'auto',
   zIndex: 2,
+  animation: `${floatBob} 2.2s ease-in-out infinite`,
 })
 
 export const GachaImgBox = style({
