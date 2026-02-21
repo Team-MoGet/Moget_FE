@@ -20,6 +20,7 @@ export default function BirthdayClaim({
   onClaim,
 }: BirthdayClaimProps) {
   const handleClaim = () => {
+    localStorage.setItem('claim', 'true')
     onClaim?.();
   };
 

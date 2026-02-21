@@ -215,6 +215,18 @@ export const FailCard = style({
   gap: '16px',
 })
 
+export const GiftCard = style({
+  position: 'relative',
+  width: '100%',
+  maxWidth: '340px',
+  borderRadius: '24px',
+  backgroundColor: theme.white,
+  padding: '28px 20px 20px',
+  boxShadow: '0 18px 40px rgba(0, 0, 0, 0.15)',
+  ...flex.COLUMN_CENTER,
+  gap: '28px',
+})
+
 export const FailCloseButton = style({
   position: 'absolute',
   top: '14px',
@@ -429,4 +441,8 @@ export const HistoryName = style({
 export const HistoryBrand = style({
   fontSize: '13px',
   color: theme.grey500,
+})
+
+export const GetGiftTextLayout = style({
+  ...flex.COLUMN_CENTER
 })

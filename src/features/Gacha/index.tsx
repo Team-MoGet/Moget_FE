@@ -25,6 +25,8 @@ import Gift3 from '@/assets/3.png'
 import Gift4 from '@/assets/4.png'
 import Gift5 from '@/assets/5.png'
 import * as S from './style.css'
+import Gift from '@/assets/gift'
+import { useNavigate } from 'react-router-dom'
 
 declare global {
   interface Window {
@@ -49,6 +51,7 @@ const GachaHistory = [
 ]
 
 export default function Gacha() {
+  const navigate = useNavigate();
   const [ticketCount, setTicketCount] = useState<number>(() => {
     return Number(localStorage.getItem('gachaTicket') ?? 0);
   });
@@ -59,6 +62,7 @@ export default function Gacha() {
   const [remainingDays, setRemainingDays] = useState<number | null>(null);
   const [showGift, setShowGift] = useState(false);
   const [isFailOpen, setIsFailOpen] = useState(false);
+  const [isGetGiftOpen, setIsGetGiftOpen] = useState(false)
   const [gift, setGift] = useState({
     id: '',
     brand: '',
@@ -106,6 +110,12 @@ export default function Gacha() {
   useEffect(() => {
     let isMounted = true;
 
+    if (localStorage.getItem('claim') == 'true') {
+      setIsGetGiftOpen(false)
+    } else {
+      setIsGetGiftOpen(true)
+    }
+
     const fetchBirthday = async () => {
       try {
         const rawBaseUrl = import.meta.env.VITE_BASE_URL ?? '';
@@ -125,6 +135,13 @@ export default function Gacha() {
         }
 
         const data = await response.json();
+        if (data.remainingDays === 126) {
+          if (localStorage.getItem('claim') == 'true') {
+            setIsGetGiftOpen(false)
+          } else {
+            setIsGetGiftOpen(true)
+          }
+        }
         if (isMounted) {
           setRemainingDays(Number(data?.remainingDays));
         }
@@ -188,6 +205,10 @@ export default function Gacha() {
     }, 150);
   };
 
+  const handleGetGiftClick = () => {
+    navigate('/gacha/birthday-claim')
+  }
+
   return (
     <div className={S.container}>
       <div className={S.InfoBtnLayout}>
@@ -204,7 +225,7 @@ export default function Gacha() {
 
       <div className={S.DDayBtnLayout}>
         <button className={S.DDayBtn}>
-          {remainingDays === null ? '생일 D-126' : `생일 D-${remainingDays}`}
+          {remainingDays === null ? '생일 -' : `생일 D-${remainingDays}`}
         </button>
       </div>
 
@@ -225,7 +246,7 @@ export default function Gacha() {
           <p className={S.noticeText}>*생일날까지 기다리면 경품을 받을 수 있어요.</p>
         </div>
       ) : (
-        <div className={S.GachaImgLayout}>
+        <div className={S.GachaImgLayout} >
           <img
             src={bonusImg}
             alt="보너스 기회"
@@ -284,6 +305,26 @@ export default function Gacha() {
                 onClick={() => window.webkit?.messageHandlers?.kakaoShare?.postMessage({})}
               >
                 공유하고 기회 더 얻기
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {isGetGiftOpen && (
+        <div className={S.FailOverlay} onClick={() => setIsGetGiftOpen(false)}>
+          <div className={S.GiftCard} onClick={(event) => event.stopPropagation()}>
+            <button className={S.FailCloseButton} onClick={() => setIsGetGiftOpen(false)}>
+              <span className={S.FailCloseIcon} />
+            </button>
+            <div className={S.GetGiftTextLayout}>
+              <p className={S.FailTitle}>두근두근!</p>
+              <p className={S.FailTitle}>선물이 도착했어요</p>
+            </div>
+            <Gift />
+            <div className={S.FailActionGroup}>
+              <Button onClick={handleGetGiftClick} disabled={!hasTicket}>
+                선물 받기
               </Button>
             </div>
           </div>
