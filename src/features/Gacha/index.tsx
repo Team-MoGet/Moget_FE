@@ -39,7 +39,7 @@ declare global {
 }
 
 const GachaImgs = [<Gacha1 />, <Gacha2 />, <Gacha3 />, <Gacha4 />, <Gacha5 />, <Gacha6 />, <Gacha7 />]
-const GiftImgs = [PeperoImg, ChickenImg, IceCreamImg, undefined, AirpodImg]
+const GiftImgs = [PeperoImg, ChickenImg, IceCreamImg, Gift4, AirpodImg]
 const GachaHistory = [
   { id: 1, name: '빼빼로', brand: '이마트24', image: Gift1 },
   { id: 2, name: '치킨', brand: 'BHC', image: Gift2 },
@@ -171,13 +171,13 @@ export default function Gacha() {
         
         const resultGift = await giftPromise;
 
+        setGift({
+          id: resultGift.id,
+          brand: resultGift.brand,
+          name: resultGift.name
+        });
         if (resultGift && resultGift.brand !== "꽝") {
           fireConfetti();
-          setGift({
-            id: resultGift.id,
-            brand: resultGift.brand,
-            name: resultGift.name
-          });
           setShowGift(true);
         } else {
           setGachaIndex(0);
