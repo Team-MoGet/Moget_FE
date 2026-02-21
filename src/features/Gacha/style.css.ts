@@ -112,6 +112,11 @@ export const noticeText = style({
   marginTop: '12px',
 })
 
+const floatBob = keyframes({
+  '0%, 100%': { transform: 'translateY(0)' },
+  '50%': { transform: 'translateY(-8px)' },
+})
+
 export const GachaImgLayout = style({
   position: 'relative',
   width: '100%',
