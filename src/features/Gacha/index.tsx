@@ -119,7 +119,12 @@ export default function Gacha() {
           <Button onClick={onExcuseGacha} disabled={isAnimating || gachaTicket == '0'}>
             {isAnimating ? '뽑는 중...' : '선물 뽑기'}
           </Button>
-          <Button kind='light'>공유하고 기회 더 얻기</Button>
+          <Button 
+            kind='light' 
+            onClick={() => window.webkit?.messageHandlers?.kakaoShare?.postMessage({})}
+            >
+              공유하고 기회 더 얻기
+          </Button>
         </div>
       </footer>
     </div>
