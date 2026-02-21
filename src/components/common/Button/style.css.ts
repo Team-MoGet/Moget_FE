@@ -10,6 +10,7 @@ export const buttonStyle = recipe({
     height: '48px',
     position: 'relative',
     borderRadius: '12px',
+    overflow: 'hidden',
     fontWeight: '600',
     padding: '10px 24px',
     fontSize: '16px',
