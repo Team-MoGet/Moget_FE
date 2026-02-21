@@ -205,7 +205,6 @@ export default function Gacha() {
               src={GiftImgs[Number(gift.id)-1]}
               alt={gift.name}
             />
-            <img className={S.GiftImg} src={AirpodImg} alt="" />
             <div className={S.GiftInfoLayout}>
               <p className={S.BrandName}>{gift.brand}</p>
               <p className={S.GiftName}>{gift.name}</p>
