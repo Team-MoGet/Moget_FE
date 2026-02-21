@@ -204,7 +204,7 @@ export default function Gacha() {
 
       <div className={S.DDayBtnLayout}>
         <button className={S.DDayBtn}>
-          {remainingDays === null ? '생일 미등록' : `생일 D-${remainingDays}`}
+          {remainingDays === null ? '생일 D-126' : `생일 D-${remainingDays}`}
         </button>
       </div>
 
