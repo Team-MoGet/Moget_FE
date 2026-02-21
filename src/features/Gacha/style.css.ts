@@ -1,6 +1,6 @@
 import { flex } from "@/shared/styles/flex.css";
 import theme from "@/shared/styles/theme.css";
-import { style } from "@vanilla-extract/css";
+import { style, keyframes } from "@vanilla-extract/css";
 
 export const container = style({
   width: '100vw',
@@ -16,6 +16,11 @@ export const InfoBtnLayout = style({
   padding: '10px 24px',
 })
 
+export const InfoBtnGroup = style({
+  ...flex.BETWEEN,
+  width: '100%',
+})
+
 export const InfoBtn = style({
   ...flex.CENTER,
   padding: '4px 8px',
@@ -23,6 +28,15 @@ export const InfoBtn = style({
   borderRadius: '99px',
   backgroundColor: theme.white,
   boxShadow: '0 2px 8px 0 rgba(0, 0, 0, 0.06)'
+})
+
+export const InfoTextBtn = style({
+  backgroundColor: 'transparent',
+  boxShadow: 'none',
+  padding: '4px 6px',
+  color: theme.grey600,
+  fontSize: '15px',
+  fontWeight: '400',
 })
 
 export const DDayBtnLayout = style({
@@ -42,9 +56,24 @@ export const DDayBtn = style({
   color: theme.white,
 })
 
+const floatBob = keyframes({
+  '0%, 100%': { transform: 'translateY(0)' },
+  '50%': { transform: 'translateY(-8px)' },
+})
+
 export const GachaImgLayout = style({
   position: 'relative',
   width: '100%',
+})
+
+export const BonusFloat = style({
+  position: 'absolute',
+  top: '-8px',
+  left: '6px',
+  width: '120px',
+  height: 'auto',
+  zIndex: 2,
+  animation: `${floatBob} 2.2s ease-in-out infinite`,
 })
 
 export const GachaImgBox = style({
@@ -98,4 +127,156 @@ export const gachaPresentLayout = style({
   gap: '8px',
   width: '100%',
   padding: '0 24px',
+})
+
+export const GuideOverlay = style({
+  position: 'fixed',
+  inset: 0,
+  backgroundColor: 'rgba(0, 0, 0, 0.35)',
+  zIndex: 10,
+  ...flex.COLUMN_END,
+})
+
+export const GuideSheet = style({
+  width: '100%',
+  maxWidth: '520px',
+  backgroundColor: theme.white,
+  borderTopLeftRadius: '24px',
+  borderTopRightRadius: '24px',
+  padding: '12px 20px 20px',
+  boxShadow: '0 -8px 24px rgba(0, 0, 0, 0.12)',
+  maxHeight: '72vh',
+  overflow: 'hidden',
+})
+
+export const GuideHandle = style({
+  width: '56px',
+  height: '6px',
+  borderRadius: '999px',
+  backgroundColor: theme.grey200,
+  margin: '4px auto 12px',
+})
+
+export const GuideContent = style({
+  overflowY: 'auto',
+  paddingRight: '4px',
+  maxHeight: '56vh',
+})
+
+export const GuideTitle = style({
+  fontSize: '18px',
+  fontWeight: '700',
+  letterSpacing: '-0.2px',
+  color: theme.grey700,
+  marginBottom: '10px',
+})
+
+export const GuideSectionTitle = style({
+  fontSize: '16px',
+  fontWeight: '700',
+  color: theme.grey700,
+  marginTop: '16px',
+  marginBottom: '8px',
+})
+
+export const GuideList = style({
+  paddingLeft: '18px',
+  display: 'grid',
+  gap: '8px',
+  color: theme.grey600,
+  fontSize: '14px',
+  lineHeight: '1.6',
+  listStyle: 'disc',
+})
+
+export const GuideItem = style({
+  listStylePosition: 'outside',
+})
+
+export const GuideButtonArea = style({
+  marginTop: '16px',
+})
+
+export const HistorySheet = style({
+  width: '100%',
+  maxWidth: '520px',
+  backgroundColor: theme.white,
+  borderTopLeftRadius: '24px',
+  borderTopRightRadius: '24px',
+  padding: '8px 20px 24px',
+  boxShadow: '0 -8px 24px rgba(0, 0, 0, 0.12)',
+  maxHeight: '78vh',
+  overflow: 'hidden',
+})
+
+export const HistoryHeader = style({
+  ...flex.BETWEEN,
+  padding: '6px 0 12px',
+})
+
+export const BackButton = style({
+  width: '36px',
+  height: '36px',
+  borderRadius: '12px',
+  backgroundColor: theme.grey50,
+  ...flex.CENTER,
+})
+
+export const BackIcon = style({
+  width: '10px',
+  height: '10px',
+  borderLeft: `2px solid ${theme.grey700}`,
+  borderBottom: `2px solid ${theme.grey700}`,
+  transform: 'rotate(45deg)',
+  marginLeft: '4px',
+})
+
+export const HistoryTitle = style({
+  fontSize: '18px',
+  fontWeight: '700',
+  color: theme.grey700,
+})
+
+export const HistoryHeaderSpacer = style({
+  width: '36px',
+  height: '36px',
+})
+
+export const HistoryList = style({
+  display: 'grid',
+  gap: '12px',
+  paddingRight: '4px',
+  overflowY: 'auto',
+  maxHeight: '64vh',
+})
+
+export const HistoryItem = style({
+  ...flex.VERTICAL,
+  gap: '12px',
+  padding: '12px',
+  borderRadius: '16px',
+  backgroundColor: theme.grey50,
+})
+
+export const HistoryImage = style({
+  width: '64px',
+  height: '64px',
+  borderRadius: '12px',
+  objectFit: 'cover',
+})
+
+export const HistoryText = style({
+  ...flex.COLUMN_FLEX,
+  gap: '4px',
+})
+
+export const HistoryName = style({
+  fontSize: '16px',
+  fontWeight: '700',
+  color: theme.grey700,
+})
+
+export const HistoryBrand = style({
+  fontSize: '13px',
+  color: theme.grey500,
 })
