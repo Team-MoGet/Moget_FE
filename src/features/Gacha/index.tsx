@@ -3,7 +3,7 @@ import InfoSvg from '@/assets/info'
 import GachaShadowSvg from '@/assets/gachaShadow'
 import TicketSvg from '@/assets/ticket'
 import Button from '@/components/common/Button'
-import { Gacha1, Gacha2, Gacha3, Gacha4, Gacha5, Gacha6, Gacha7 } from '@/assets'
+import { AirpodImg, Gacha1, Gacha2, Gacha3, Gacha4, Gacha5, Gacha6, Gacha7 } from '@/assets'
 import * as S from './style.css'
 import axios from 'axios'
 
@@ -25,6 +25,12 @@ export default function Gacha() {
   const gachaTicket = localStorage.getItem('gachaTicket')
   const [gachaIndex, setGachaIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [showGift, setShowGift] = useState(false);
+  const [gift, setGift] = useState({
+    id: '',
+    brand: '',
+    name: '',
+  })
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const onExcuseGacha = async () => {
@@ -48,7 +54,17 @@ export default function Gacha() {
 
     try {
       const { data } = await axios.post(`${import.meta.env.VITE_BASE_URL}/gifts/draw`)
-      console.log(data)
+      if (data.gift.brand === "꽝") {
+        return;
+      } else {
+        setGift({
+          id: data.gift.id,
+          brand: data.gift.brand,
+          name: data.gift.name
+        })
+        setShowGift(true)
+      }
+      console.log(data.gift)
     } catch (err) {
       console.log(err)
     }
@@ -67,14 +83,28 @@ export default function Gacha() {
         <button className={S.DDayBtn}>생일 D-13</button>
       </div>
 
-      <div className={S.GachaImgLayout}>
-        <div className={S.GachaImgBox}>
-          {GachaImgs[gachaIndex]}
+      {showGift ? (
+        <div className={S.GiftLayout}>
+          <div className={S.GiftBox}>
+            <p className={S.CurrentGift}>현재 경품</p>
+            <img className={S.GiftImg} src={AirpodImg}  />
+            <div className={S.GiftInfoLayout}>
+              <p className={S.BrandName}>{gift.brand}</p>
+              <p className={S.GiftName}>{gift.name}</p>
+            </div>
+          </div>
+          <p className={S.noticeText}>*생일날까지 기다리면 경품을 받을 수 있어요.</p>
         </div>
-        <div className={S.GachaShadowBox}>
-          <GachaShadowSvg />
+      ) : (
+        <div className={S.GachaImgLayout}>
+          <div className={S.GachaImgBox}>
+            {GachaImgs[gachaIndex]}
+          </div>
+          <div className={S.GachaShadowBox}>
+            <GachaShadowSvg />
+          </div>
         </div>
-      </div>
+      )}
 
       <footer className={S.FooterLayout}>
         <div className={S.ticketLayout}>
