@@ -5,6 +5,19 @@ import TicketSvg from '@/assets/ticket'
 import Button from '@/components/common/Button'
 import { Gacha1, Gacha2, Gacha3, Gacha4, Gacha5, Gacha6, Gacha7 } from '@/assets'
 import * as S from './style.css'
+import axios from 'axios'
+
+declare global {
+  interface Window {
+    webkit?: {
+      messageHandlers?: {
+        kakaoShare?: {
+          postMessage: (data: unknown) => void
+        }
+      }
+    }
+  }
+}
 
 const GachaImgs = [<Gacha1 />, <Gacha2 />, <Gacha3 />, <Gacha4 />, <Gacha5 />, <Gacha6 />, <Gacha7 />]
 
@@ -14,7 +27,7 @@ export default function Gacha() {
   const [isAnimating, setIsAnimating] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const onExcuseGacha = () => {
+  const onExcuseGacha = async () => {
     if (isAnimating) return;
   
     setIsAnimating(true);
@@ -32,6 +45,13 @@ export default function Gacha() {
         setIsAnimating(false);
       }
     }, 150);
+
+    try {
+      const { data } = await axios.post(`${import.meta.env.VITE_BASE_URL}/gifts/draw`)
+      console.log(data)
+    } catch (err) {
+      console.log(err)
+    }
   };
 
   return (
