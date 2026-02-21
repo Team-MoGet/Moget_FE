@@ -18,6 +18,9 @@ export default function Gacha() {
   
     setIsAnimating(true);
     let current = 1;
+
+    const ticket = localStorage.getItem('gachaTicket');
+    localStorage.setItem('gachaTicket', (Number(ticket) - 1).toString());
   
     timerRef.current = setInterval(() => {
       if (current < GachaImgs.length) {
